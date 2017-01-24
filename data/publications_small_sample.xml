@@ -1,0 +1,73 @@
+<dblp>
+<inproceedings mdate="2006-06-27" key="conf/ah/BechhoferYHG06">
+    <author>Sean Bechhofer</author>
+    <author>Yeliz Yesilada</author>
+    <author>Bernard Horan</author>
+    <author>Carole A. Goble</author>
+    <title>Knowledge-Driven Hyperlinks: Linking in the Wild.</title>
+    <pages>1-10</pages>
+    <year>2006</year>
+    <crossref>conf/ah/2006</crossref>
+    <booktitle>AH</booktitle>
+    <ee>http://dx.doi.org/10.1007/11768012_1</ee>
+    <url>db/conf/ah/ah2006.html#BechhoferYHG06</url>
+</inproceedings>
+<inproceedings mdate="2006-02-13" key="conf/assets/HarperGSY04">
+    <author>Simon Harper</author>
+    <author>Carole A. Goble</author>
+    <author>Robert Stevens</author>
+    <author>Yeliz Yesilada</author>
+    <title>Middleware to expand context and preview in hypertext.</title>
+    <pages>63-70</pages>
+    <year>2004</year>
+    <crossref>conf/assets/2004</crossref>
+    <booktitle>ASSETS</booktitle>
+    <ee>http://doi.acm.org/10.1145/1028630.1028643</ee>
+    <url>db/conf/assets/assets2004.html#HarperGSY04</url>
+</inproceedings>
+<book mdate="2002-01-03" key="books/aw/CeriF97">
+    <author>Stefano Ceri</author>
+    <author>Piero Fraternali</author>
+    <title>Designing Database Applications with Objects and Rules: The IDEA Methodology</title>
+    <publisher href="db/publishers/aw.html">Addison-Wesley</publisher>
+    <year>1997</year>
+    <isbn>0-201-40369-2</isbn>
+</book>
+<incollection mdate="2008-02-24" key="books/crc/tucker97/CeriR97">
+    <author>Stefano Ceri</author>
+    <author>Raghu Ramakrishnan</author>
+    <title>Rules in Data-Based Systems.</title>
+    <pages>1142-1157</pages>
+    <year>1997</year>
+    <crossref>books/crc/tucker1997</crossref>
+    <booktitle>The Computer Science and Engineering Handbook</booktitle>
+    <url>db/books/collections/tucker97.html#CeriR97</url>
+</incollection>
+<article mdate="2011-06-29" key="journals/bib/Bornberg-BauerP02">
+    <author>Erich Bornberg-Bauer</author>
+    <author>Norman W. Paton</author>
+    <title>Conceptual data modelling for bioinformatics.</title>
+    <pages>166-180</pages>
+    <year>2002</year>
+    <volume>3</volume>
+    <journal>Briefings in Bioinformatics</journal>
+    <number>2</number>
+    <url>db/journals/bib/bib3.html#Bornberg-BauerP02</url>
+    <ee>http://dx.doi.org/10.1093/bib/3.2.166</ee>
+</article>
+<article mdate="2009-06-22" key="journals/bib/GobleSHWL08">
+    <author>Carole A. Goble</author>
+    <author>Robert Stevens</author>
+    <author>Duncan Hull</author>
+    <author>Katy Wolstencroft</author>
+    <author>Rodrigo Lopez</author>
+    <title>Data curation + process curation=data integration + science.</title>
+    <pages>506-517</pages>
+    <year>2008</year>
+    <volume>9</volume>
+    <journal>Briefings in Bioinformatics</journal>
+    <number>6</number>
+    <ee>http://dx.doi.org/10.1093/bib/bbn034</ee>
+    <url>db/journals/bib/bib9.html#GobleSHWL08</url>
+</article>
+</dblp>

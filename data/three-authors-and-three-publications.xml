@@ -1,0 +1,18 @@
+<dblp>
+<inproceedings>
+    <author>author1</author>
+    <title>journal1</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>author1</author>
+    <author>author2</author>
+    <title>journal2</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>author3</author>
+    <title>journal3</title>
+    <year>9999</year>
+</inproceedings>
+</dblp>

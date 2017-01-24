@@ -1,0 +1,35 @@
+<dblp>
+<inproceedings>
+    <author>AUTHOR A</author>
+    <author>AUTHOR B</author>
+    <author>AUTHOR C</author>
+    <title>Paper 1</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR A</author>
+    <title>Paper 2</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR C</author>
+    <author>AUTHOR B</author>
+    <title>Paper 3</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR C</author>
+    <title>Paper 3</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR D</author>
+    <title>Paper 4</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR D</author>
+    <title>Paper 5</title>
+    <year>9999</year>
+</inproceedings>
+</dblp>

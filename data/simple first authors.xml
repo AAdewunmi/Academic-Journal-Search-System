@@ -1,0 +1,50 @@
+<dblp>
+<book>
+    <author>Author1</author>
+    <author>Author2</author>
+    <author>Author3</author>
+    <title>Paper1</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author4</author>
+    <author>Author1</author>
+    <author>Author3</author>
+    <title>Paper2</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author1</author>
+    <title>Paper3</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author4</author>
+    <author>Author3</author>
+    <author>Author1</author>
+    <title>Paper4</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author1</author>
+    <author>Author2</author>
+    <author>Author4</author>
+    <title>Paper5</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author3</author>
+    <author>Author2</author>
+    <author>Author1</author>
+    <title>Paper6</title>
+    <year>9999</year>
+</book>
+<book>
+    <author>Author6</author>
+    <author>Author7</author>
+    <author>Author8</author>
+    <author>Author9</author>
+    <title>Paper6</title>
+    <year>9999</year>
+</book>
+</dblp>

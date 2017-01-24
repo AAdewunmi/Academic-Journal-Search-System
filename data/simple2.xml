@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp>
+<inproceedings>
+    <author>AUTHOR1 &eacute;</author>
+    <author>AUTHOR2 &#233;</author>
+    <title>TITLE</title>
+    <year>9999</year>
+</inproceedings>
+</dblp>

@@ -1,0 +1,48 @@
+#footer {
+	font-size: 0.8em;
+	font-family: Arial;
+	margin-top: 30px;
+}
+#homeImage {
+	margin: auto;
+    width: 65%;
+    padding-top: 25px;
+}
+#logo {
+	border-bottom-style: none;
+	vertical-align: middle;
+}
+#overViewBody {
+	height: 200px;
+}
+.description {
+	font-size: 18px;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+.tableHead, .tableBody { 
+	display: block;
+	text-align: left;
+}
+.tableBody {
+    height: 390px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.pageTitle {
+	margin-left: 20px;
+	font-size: 1.8em;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	color: #660099;
+}
+.tableContainer {
+	height: 300px;
+	max-width: 100%;
+	overflow-y: scroll;
+}
+.tableHeader {
+	text-align: left;
+}
+tbody tr:nth-child(even) {
+    background: #e5e5ff;
+}

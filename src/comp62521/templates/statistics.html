@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div id="homeImage">
+  <img src="{{ url_for('static', filename='homeImage.jpg') }}" id="homeImage" alt="An application that provides information about collaborations on research publications."/>
+</div>
+{% endblock %}

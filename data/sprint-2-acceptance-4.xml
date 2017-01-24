@@ -1,0 +1,52 @@
+<dblp>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <author>AUTHOR2</author>
+    <author>AUTHOR3</author>
+    <title>PUBLICATION</title>
+    <year>2010</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR3</author>
+    <author>AUTHOR4</author>
+    <title>PUBLICATION</title>
+    <year>2010</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <title>PUBLICATION</title>
+    <year>2010</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR6</author>
+    <author>AUTHOR2</author>
+    <title>PUBLICATION</title>
+    <year>2012</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR3</author>
+    <author>AUTHOR4</author>
+    <title>PUBLICATION</title>
+    <year>2012</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <title>PUBLICATION</title>
+    <year>2012</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR7</author>
+    <title>PUBLICATION</title>
+    <year>2013</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR8</author>
+    <title>PUBLICATION</title>
+    <year>2013</year>
+</inproceedings>
+<book>
+    <author>AUTHOR8</author>
+    <title>PUBLICATION</title>
+    <year>2013</year>
+</book>
+</dblp>

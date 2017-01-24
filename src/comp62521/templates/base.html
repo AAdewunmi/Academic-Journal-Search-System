@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='menu_style.css') }}">
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="{{ url_for('static', filename='menu.js') }}"></script>
+		<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+	</head>
+
+	<body>
+		<div id="page">
+			<div id="header">
+				<span>
+					<a href="http://www.manchester.ac.uk">
+						<img src="{{ url_for('static', filename='Logo_ManchesterEst1824.png') }}" id="logo"/>
+					</a>
+				</span>
+				
+				<span class="pageTitle">School of Computer Science: Research Collaboration Application (SoCSRCA)</span>          
+
+				<!-- CSS menu from http://cssmenumaker.com/menu/cherry-responsive-menu
+				Styling modified in line with Manchester University website-->
+				<div id='cssmenu'>
+					<ul>
+					   <li class='active'><a href='/'><span>Home</span></a></li>
+					   <li class='active'><a href='/statisticsdetails/publication_summary'><span>Publication Summary</span></a></li>
+					   <li class='has-sub'><a href='/statisticsdetails/publication_author'><span>Author Publications</span></a>
+					      <ul>
+			         		<li><a href="/conferencePapersBreakdown"><span class="ashFont">Conference Papers Breakdown</span></a></li>
+				        	<li><a href="/journalBreakdown"><span class="ashFont">Journal Breakdown</span></a></li>	
+				        	<li><a href="/bookBreakdown"><span class="ashFont">Book Breakdown</span></a></li>
+				         	<li class="last"><a href="/bookChapterBreakdown"><span class="ashFont">Book Chapter Breakdown</span></a></li>
+					      </ul>
+					   </li>
+					   <li class='has-sub'><a href='/statisticsdetails/publication_year'><span>Yearly Publication Information</span></a>
+					      <ul>
+			         		<li><a href="/statisticsdetails/publication_year"><span class="ashFont">Yearly Publications</span></a></li>
+				        	<li><a href="/statisticsdetails/author_year"><span class="ashFont">Yearly Authors</span></a></li>	
+				        	<li><a href="/averages"><span class="ashFont">Averaged Year Information</span></a></li>
+					      </ul>
+					   </li>
+					   <li class='last'><a href='/coauthors'><span>Co-Author Information</span></a></li>
+					   <li class='last'><a href='/authorstats'><span>Author Search</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="content">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+		<div id="footer">
+			Module: COMP62521. Dataset loaded: {{ args.dataset }}
+		</div>
+	</body>
+</html>

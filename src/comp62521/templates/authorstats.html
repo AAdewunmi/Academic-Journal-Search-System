@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% block title %}{{ args.title }}{% endblock %}
+{% block content %}
+<h1>{{ args.title }}</h1>
+<div class="description">
+  {{ args.description}}
+</div>
+
+<form name="input" action="/authorstats" method="get" data-ajax="false">
+<label>Author Name:</label><input type="text" required name="author_name">
+<input type="submit" value="Submit">
+</form>
+
+<h1>{{ args.data[1][0] }}</h1>
+<table>
+  <tbody id="overViewBody">
+    <tr>
+
+      <td>{{ args.data[0][0] }}</td>
+      <td>{{ args.data[1][1] }}</td>
+
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][1] }}</td>
+      <td>{{ args.data[1][2] }}</td>
+
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][2] }}</td>
+      <td>{{ args.data[1][3] }}</td>
+
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][3] }}</td>
+      <td>{{ args.data[1][4] }}</td>
+
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][4] }}</td>
+      <td>{{ args.data[1][5] }}</td>
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][5] }}</td>
+      <td>{{ args.data[1][6] }}</td>
+
+    </tr>
+    <tr>
+
+      <td>{{ args.data[0][6] }}</td>
+      <td>{{ args.data[1][7] }}</td>
+
+    </tr>
+
+    <tr>
+
+      <td>{{ args.data[0][7] }}</td>
+      <td>{{ args.data[1][8] }}</td>
+
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+
+      <th>{{ end }}</th>
+
+    </tr>
+  </tfoot>
+</table>
+
+{% if args.pub_split[0] != "" and args.data[1][0] != "" %}
+<div id="authorChart" style="height: 400px; width: 100%; float: right; margin-bottom: 50px;"></div> 
+
+  <h1>Publication breakdown</h1>
+  <table>
+    <thead>
+      <tr>
+        {% for column in args.pub_split[0] %}
+          <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for key, value in args.pub_split[1].iteritems() %}
+      <tr>
+        <td>
+          {{ key }}
+        </td>
+        {% for data_item in value %}
+          <td>
+            {{ data_item }}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+<div id="kak"></div>
+<div id="breakdownChart" style="height: 400px; width: 100%; float: right;"></div>
+<div id="breakdownChart" style="height: 400px; width: 100%; float: right;"></div>
+{% endif %}
+
+<script src="{{ url_for('static', filename='canvasjs.min.js') }}"></script>
+<script type="text/javascript">
+
+       var labels = [{% for label_item in args.data[0] %}
+                        "{{ label_item }}", 
+                     {% endfor %}]
+       var data= [{% for data_item in args.data[1] %}
+                        "{{ data_item }}", 
+                     {% endfor %}]
+
+	var chart = new CanvasJS.Chart("authorChart",
+	{
+		title:{
+			text: data[0] + " Publications"
+		},
+		legend: {
+			maxWidth: 600,
+			itemWidth: 280
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+                        toolTipContent: "{y}",
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{ y: data[1], indexLabel: labels[0] },
+				{ y: data[2], indexLabel: labels[1] },
+				{ y: data[3], indexLabel: labels[2] },
+				{ y: data[4], indexLabel: labels[3]}
+			]
+		}
+		]
+	});
+	 chart.render();
+
+</script>
+<script type="text/javascript">
+  window.onload = function () {
+   var publication = {};
+   var keys = [];
+   
+
+   {% for key, value in args.pub_split[1].iteritems() %}
+        keys.push("{{key}}");
+        //publication["{{key}}"] = "{{value}}";
+        var pub = [];
+        {% for item in value %}
+          pub.push("{{item}}");          
+        {% endfor %}
+        publication["{{key}}"] = pub;
+   {% endfor %}
+
+  var test =    publication[keys[0]];
+    var chart = new CanvasJS.Chart("breakdownChart",
+    {
+      title:{
+        text: "Publication Breakdown Chart"
+      },
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true, 
+        name: "series0",
+        legendText: keys[0],    
+        dataPoints: [
+        { y: parseInt(publication[keys[0]][0]), label: "Sole Author"},
+        { y: parseInt(publication[keys[0]][1]),  label: "First Author" },
+        { y: parseInt(publication[keys[0]][2]),  label: "Last Author"}
+        ]
+      },
+
+      {
+        type: "column",
+        showInLegend: true, 
+        name: "series1",
+        legendText: keys[1],
+        dataPoints: [
+        { y: parseInt(publication[keys[1]][0]), label: "Sole Author"},
+        { y: parseInt(publication[keys[1]][1]),  label: "First Author" },
+        { y: parseInt(publication[keys[1]][2]),  label: "Last Author"}
+        ]
+      },
+     {
+        type: "column",
+        showInLegend: true, 
+        name: "series2",
+        legendText: keys[2],
+        dataPoints: [
+        { y: parseInt(publication[keys[2]][0]), label: "Sole Author"},
+        { y: parseInt(publication[keys[2]][1]),  label: "First Author" },
+        { y: parseInt(publication[keys[2]][2]),  label: "Last Author"}
+        ]
+      },
+     {
+        type: "column",
+        showInLegend: true, 
+        name: "series3",
+        legendText: keys[3],
+        dataPoints: [
+        { y: parseInt(publication[keys[3]][0]), label: "Sole Author"},
+        { y: parseInt(publication[keys[3]][1]),  label: "First Author" },
+        { y: parseInt(publication[keys[3]][2]),  label: "Last Author"}
+        ]
+      }
+
+      ]
+    });
+    //for (){
+      //var dataset = 
+     //document.getElementById("kak").innerHTML = publication[keys[0]];
+    //chart.options.data[0].dataPoints.push({y: publication[keys[0]][0], label: "Kakota Author"});
+    //chart.options.data[0].dataPoints.push({y: publication[keys[0]][1], label: "First Author"});
+    //chart.options.data[0].dataPoints.push({y: publication[keys[0]][2], label: "Last Author"});
+    //}
+    chart.render();
+  }
+  </script>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+<dblp>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <author>AUTHOR3</author>
+    <author>AUTHOR4</author>
+    <title>PUBLICATION1</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <author>AUTHOR4</author>
+    <title>PUBLICATION2</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>AUTHOR1</author>
+    <title>PUBLICATION3</title>
+    <year>9999</year>
+</inproceedings>
+<book>
+    <author>AUTHOR2</author>
+    <title>PUBLICATION4</title>
+    <year>9999</year>
+</book>
+</dblp>
